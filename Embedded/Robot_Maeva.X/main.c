@@ -24,7 +24,7 @@ int main(void)
     InitTimer23();
     
     InitPWM();
-    PWMSetSpeed(20);
+    PWMSetSpeed(0);
     
     /****************************************************************************************************/
     // Boucle Principale
