@@ -24,16 +24,15 @@ int main(void)
     InitTimer23();
     
     InitPWM();
-    PWMSetSpeed(-20, MOTEUR_GAUCHE);
-    PWMSetSpeed(20, MOTEUR_DROIT);
-    
+//    PWMSetSpeed(-20, MOTEUR_GAUCHE);
+//    PWMSetSpeed(20, MOTEUR_DROIT);
+    PWMSetSpeedConsigne(20, MOTEUR_GAUCHE);
+//    
     /****************************************************************************************************/
     // Boucle Principale
     /****************************************************************************************************/
     while (1) {
-//        LED_BLANCHE = !LED_BLANCHE;
-//        LED_BLEUE = !LED_BLEUE;
-//        LED_ORANGE = !LED_ORANGE;
     } // fin main
 }
+
 
