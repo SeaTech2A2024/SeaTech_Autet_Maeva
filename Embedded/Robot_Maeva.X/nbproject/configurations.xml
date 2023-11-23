@@ -25,6 +25,7 @@
       <itemPath>Robot.c</itemPath>
       <itemPath>ToolBox.c</itemPath>
       <itemPath>PWM.c</itemPath>
+      <itemPath>ADC.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
