@@ -2,11 +2,11 @@
 #include "timer.h"
 #include "IO.h"
 #include "PWM.h"
+#include "ADC.h"
 
 unsigned char toggle = 0;
 
-//Initialisation d?un timer 32 bits
-
+//Initialisation d'un timer 32 bits
 void InitTimer23(void) {
     T3CONbits.TON = 0; // Stop any 16-bit Timer3 operation
     T2CONbits.TON = 0; // Stop any 16/32-bit Timer3 operation
@@ -60,4 +60,5 @@ void __attribute__((interrupt, no_auto_psv)) _T1Interrupt(void) {
     IFS0bits.T1IF = 0;
     LED_BLANCHE = !LED_BLANCHE;
     PWMUpdateSpeed();
+    ADC1StartConversionSequence();
 }
